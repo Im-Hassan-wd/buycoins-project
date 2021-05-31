@@ -5,10 +5,6 @@ repoInput.addEventListener('submit', function(e){
 
     const value = repoInput.querySelector('input[type="text"]').value;
 
-
-    const API = `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`;
-
-
     const data = JSON.stringify ({
          query: `{
             user(login: "${value}") {
@@ -143,6 +139,7 @@ repoInput.addEventListener('submit', function(e){
             <li><a href="#">Sponsors</a></li>
             <li><a href="#">Settings</a></li>
             <li> <img src="${avatarUrl}">${name}</li>
+            <li><i class="fas fa-sign-out-alt">Sign out</i></li>
         
         `
 
