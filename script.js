@@ -3,9 +3,10 @@ const repoInput = document.forms[0];
 repoInput.addEventListener('submit', function(e){
     e.preventDefault();
 
-
     const value = repoInput.querySelector('input[type="text"]').value;
-    const API = `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`;
+
+
+    const API = `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`;
 
 
     const data = JSON.stringify ({
@@ -201,8 +202,8 @@ repoInput.addEventListener('submit', function(e){
         `
 
     };
-
     init();
+
 })
 
 //menu bar
